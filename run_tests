@@ -22,7 +22,7 @@ for test in ${run_tests}; do
     test_pts="${test_pts/.sh/}"
     test_name="${test_file_name%-*}"
     test_name="${test_name##*-}"
-    printf " * %s %-20s [%s pts]\n" "${test_num}" "${test_name}" "${test_pts}"
+    printf " * %s %-20s [%s pts]\n" "${test_num}" "${test_name:0:20}" "${test_pts}"
     # run it
     (( total_points += test_pts ))
 done
