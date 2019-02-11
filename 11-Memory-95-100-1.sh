@@ -5,13 +5,13 @@ test_start "Memory: 94.9%, 100% Usage" \
 
 cp "${TEST_DIR}/mem/95" "${TEST_DIR}/fakeproc/meminfo"
 ./inspector -p "${TEST_DIR}/fakeproc" -r | sed 's/[[:space:]]//g' \
-    | grep -i 'MemoryUsage:\[##################--\]94.9%(474.5GB/500.0GB)'
+    | grep -i 'MemoryUsage:\[##################--\]94.9%(4....GB/5....GB)'
 result1=${?}
 
 cp "${TEST_DIR}/mem/100" "${TEST_DIR}/fakeproc/meminfo"
 # Spaces are removed before doing the string comparison:
 ./inspector -p "${TEST_DIR}/fakeproc" -r | sed 's/[[:space:]]//g' \
-    | grep -i 'MemoryUsage:\[####################\]100.0%(500.0GB/500.0GB)'
+    | grep -i 'MemoryUsage:\[####################\]100.0%(5....GB/5....GB)'
 result2=${?}
 
 
