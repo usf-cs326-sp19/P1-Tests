@@ -1,4 +1,3 @@
-MemTotal:       524288000 kB
 MemFree:        11516488 kB
 MemAvailable:   20273148 kB
 Buffers:          254252 kB
@@ -13,6 +12,7 @@ Inactive(file):   166212 kB
 Unevictable:           0 kB
 Mlocked:               0 kB
 SwapTotal:      62498808 kB
+MemTotal:       524288000 kB
 SwapFree:       62163448 kB
 Dirty:             27612 kB
 Writeback:             0 kB

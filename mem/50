@@ -1,4 +1,3 @@
-MemTotal:       524288000 kB
 MemFree:        11516488 kB
 MemAvailable:   20273148 kB
 Buffers:          254252 kB
@@ -44,3 +43,4 @@ Hugepagesize:       2048 kB
 DirectMap4k:      418772 kB
 DirectMap2M:    16259072 kB
 DirectMap1G:    50331648 kB
+MemTotal:       524288000 kB
